@@ -1,0 +1,116 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(thermo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 12px;
+    
+}
+.header{
+    background: rgb(91, 138, 212);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px 12px 0px 0px;
+}
+.title{
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+.subtitle{
+    font-size: 16px;
+    opacity: 0.9;
+}
+.container1{
+    padding: 30px;
+}
+.input{
+    margin-bottom: 20px;
+}
+.input-label{
+    display: block;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+.temperature-input,.unit-select{
+width: 100%;
+padding: 12px;
+border-radius: 12px;
+border: 2px solid rgb(219, 216, 216);
+font-size: 16px;
+background-color:rgb(202, 228, 237);
+margin-bottom: 10px;
+box-sizing: border-box;
+}
+.temperature-input:focus,.unit-select:focus{
+    outline: none;
+    border-color: rgb(202, 228, 237);;
+}
+.unit-selector{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+.unit-select-wrapper{
+    flex: 1;
+}
+.swap-btn{
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+.convert-btn{
+    width: 100%;
+    padding: 15px;
+    background: rgb(91, 138, 212);
+    
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.result-container{
+    background-color:rgb(202, 228, 237);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+.result-label{
+    font-size: 14px;
+    color:rgb(51, 151, 233);
+    margin-bottom: 5px;
+}
+.result-value{
+font-size: 30px;
+font-weight: 600;
+color: rgb(59, 126, 184);
+}
+.result-unit{
+  font-size: 26px;
+  color: rgb(60, 161, 194);
+}
